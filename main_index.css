@@ -1,4 +1,4 @@
-<style type='text/css'> .post h1, .post h2, h3.date-header, .jump-link, .feed-links {
+.post h1, .post h2, h3.date-header, .jump-link, .feed-links {
     display:none
 }
 #main-wrapper {
@@ -75,4 +75,3 @@
 #carousel ul li a.slider_title:hover {
     color:#f7bc2f
 }
-</style>
