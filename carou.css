@@ -1,0 +1,78 @@
+<style type='text/css'> .post h1, .post h2, h3.date-header, .jump-link, .feed-links {
+    display:none
+}
+#main-wrapper {
+    width:808px
+}
+.post {
+    width:170px;
+    height:285px;
+    float:left;
+    overflow:hidden;
+    margin:2px 30px 30px 0;
+    padding:0;
+    background:#fff
+}
+#carousel {
+    width:1100px;
+    height:350px;
+    position:relative;
+    display:block;
+    margin:20px -20px 0
+}
+#carousel .container {
+    position:absolute;
+    left:4px;
+    width:1268px;
+    height:300px;
+    overflow:hidden;
+    margin:0
+}
+#carousel #previous_button {
+    position:absolute;
+    width:25px;
+    height:290px;
+    background:url(http://3.bp.blogspot.com/-SFH7pfuPOg4/UAVZimY-OuI/AAAAAAAAHqE/MOKZ4nE0EFM/s1600/prev.png) center;
+    z-index:100;
+    cursor:pointer
+}
+#carousel #next_button {
+    position:absolute;
+    right:0;
+    width:25px;
+    height:290px;
+    background:url(http://4.bp.blogspot.com/-pFR58sZNzCo/UAVZh9I72lI/AAAAAAAAHp8/JTIiHJfsqHA/s1600/next.png) center;
+    z-index:100;
+    cursor:pointer
+}
+#carousel #next_button:hover, #carousel #previous_button:hover, #carousel ul li:hover {
+    filter:alpha(opacity=80);
+    opacity:.8
+}
+#carousel ul {
+    width:100000px;
+    position:relative;
+    margin-top:10px
+}
+#carousel ul li {
+    background:#fff;
+    display:inline;
+    float:left;
+    text-align:center;
+    font-weight:700;
+    line-height:1.2em;
+    width:245px;
+    height:320px;
+    margin:0 1px 20px 12px;
+    padding:6px
+}
+#carousel ul li a.slider_title, #display_nonedisabled {
+    color:#5ea19d;
+    display:block;
+    margin-top:5px;
+    text-shadow:0 1px 1px #000
+}
+#carousel ul li a.slider_title:hover {
+    color:#f7bc2f
+}
+</style>
