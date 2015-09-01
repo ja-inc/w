@@ -1,0 +1,224 @@
+@media only screen and (max-width:1085px) {
+    #selectnav1 {
+        background:none repeat scroll 0 0 #333;
+        border:1px solid #232323;
+        color:#fff;
+        margin:33px 0 0 15px;
+        padding:5px;
+        width:95%
+    }
+    .selectnav {
+        display:block;
+        margin:0 10px;
+        padding:7px;
+        width:95%
+    }
+}
+@media only screen and (max-width:767px) {
+    #selectnav1 {
+        width:95%
+    }
+}
+@media only screen and (max-width:479px) {
+    #selectnav1 {
+        width:90%
+    }
+}
+@media only screen and (max-width:1020px) {
+    .creditpic, .picfooter, .menu, #headerpic-wrapper {
+        width:900px;
+        overflow:hidden
+    }
+    #menu-wrapper {
+        width:942px;
+        position:relative;
+        padding:0
+    }
+    .freedom {
+        position:absolute;
+        top:50px
+    }
+    .searchform input#q {
+        right:10px!important;
+        width:calc(100% - 20px)
+    }
+    #header-wrapper {
+        width:980px
+    }
+    .menu li a {
+        padding:12px 36px 12px
+    }
+    #outer-wrapper {
+        width:940px
+    }
+    #carousel, #display_nonedisabled {
+    }
+    #main-wrapper {
+        width:880px;
+        margin:0 auto;
+        float:none
+    }
+    #sidebar-wrapper, #sidebar1-wrapper {
+        width:100%
+    }
+    #footer-wrapper {
+        width:950px
+    }
+    #footer1-wrapper, #footer2-wrapper, #footer3-wrapper, #footer4-wrapper {
+        width:48%
+    }
+    .credit {
+        width:940px
+    }
+    div#footer1-wrapper {
+        margin-left:10px
+    }
+}
+@media only screen and (max-width:985px) and (min-width:768px) {
+    .creditpic, .picfooter, .menu, #headerpic-wrapper {
+        width:740px;
+        overflow:hidden
+    }
+    #menu-wrapper {
+        width:678px
+    }
+    #header-wrapper {
+        width:720px
+    }
+    .menu li a {
+        padding:12px 36px 12px
+    }
+    #carousel, #display_nonedisabled {
+    }
+    #outer-wrapper {
+        width:680px
+    }
+    #main-wrapper {
+        width:660px;
+        margin:0 auto;
+        float:none
+    }
+    #sidebar-wrapper, #sidebar1-wrapper {
+        width:100%
+    }
+    #footer-wrapper {
+        width:688px
+    }
+    #footer1-wrapper, #footer2-wrapper, #footer3-wrapper, #footer4-wrapper {
+        width:47%
+    }
+    .credit {
+        width:690px
+    }
+    #menu-main {
+        display:none
+    }
+    #header img {
+        padding-top:55px;
+        width:50%
+    }
+}
+@media only screen and (max-width:767px) and (min-width:480px) {
+    .creditpic, .picfooter, .menu, #headerpic-wrapper {
+        width:460px;
+        overflow:hidden
+    }
+    #header-wrapper {
+        width:450px
+    }
+    #menu-wrapper {
+        width:380px
+    }
+    .menu li a {
+        padding:12px 36px 12px
+    }
+    #carousel {
+        display:none
+    }
+    #outer-wrapper {
+        width:430px;
+        padding:15px
+    }
+    #main-wrapper {
+        width:440px;
+        margin:0 auto;
+        float:none
+    }
+    #sidebar-wrapper, #sidebar1-wrapper {
+        width:100%
+    }
+    #footer-wrapper {
+        width:433px
+    }
+    #footer1-wrapper, #footer2-wrapper, #footer3-wrapper, #footer4-wrapper {
+        width:98%
+    }
+    .credit {
+        width:430px
+    }
+    #menu-main {
+        display:none
+    }
+    #header img {
+        padding-top:55px;
+        width:50%
+    }
+    #slider1 {
+        display:none
+    }
+}
+@media only screen and (max-width:479px) {
+    .creditpic, .picfooter, .menu, #headerpic-wrapper {
+        width:290px;
+        overflow:hidden
+    }
+    #header-wrapper {
+        width:280px
+    }
+    #menu-wrapper {
+        width:200px
+    }
+    #header {
+        width:276px
+    }
+    .menu li a {
+        padding:12px 36px 12px
+    }
+    #carousel {
+        display:none
+    }
+    #outer-wrapper {
+        width:260px;
+        padding:15px
+    }
+    #main-wrapper {
+        width:216px;
+        margin:0 auto;
+        float:none
+    }
+    #sidebar-wrapper, #sidebar1-wrapper {
+        width:100%
+    }
+    #footer-wrapper {
+        width:270px
+    }
+    #footer1-wrapper, #footer2-wrapper, #footer3-wrapper, #footer4-wrapper {
+        width:98%
+    }
+    .credit {
+        width:270px
+    }
+    #menu-main {
+        display:none
+    }
+    #header img {
+        padding-top:55px;
+        width:50%
+    }
+    #slider1 {
+        display:none
+    }
+}
+.post:nth-child(4n+4) {
+    margin-right:0
+}
