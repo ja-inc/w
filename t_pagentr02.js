@@ -246,8 +246,8 @@ function getMousePosition(e) {
 }
 var home_page = "/";
 var urlactivepage = location.href;
-var postperpage = 8;
-var numshowpage = 5;
+var postperpage = 12;
+var numshowpage = 20;
 var nopage;
 var jenis;
 var nomerhal;
