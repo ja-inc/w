@@ -8,7 +8,7 @@ function addClass(t, e) {
     replaceClass(t, e, "")
 }
 function removeClass(t, e) {
-    replaceClass(t, "", e)
+    replaceClass(t, "", e)num
 }
 function replaceClass(t, e, a) {
     var s = e;
@@ -158,6 +158,6 @@ Paginator.prototype.prepareHtml = function () {
 var home_page = "/",
     urlactivepage = location.href,
     postperpage = 12,
-    numshowpage = 20,
+    numshowpage = 5,
     nopage, jenis, nomerhal, lblname1;
 halamanblogger();
