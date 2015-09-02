@@ -52,8 +52,9 @@ function imgrs01(i, e, s) {
     $(i).each(function () {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + e, "/w" + s),
-            "min-width": 205,
-            height: "auto"
+            width: "auto",
+            height: "auto",
+            style: "max-width:500px;max-height:350px;"
         })
     })
 }
