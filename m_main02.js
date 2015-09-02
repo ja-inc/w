@@ -52,7 +52,8 @@ function imgrs01(i, e, s) {
     $(i).each(function () {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + e, "/w" + s),
-            width: s
+            "min-width": 205,
+            height: "auto"
         })
     })
 }
@@ -63,7 +64,8 @@ function imgrs02(t, i, s) {
     $(t).each(function () {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + i + "-c", "/w" + s),
-            width: s
+            width: s,
+            height: "auto"
         })
     })
 }
