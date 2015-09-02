@@ -910,7 +910,7 @@ div#sidebar1 .Label li a:before {
     -khtml-opacity: .7
 }
 #viewers {
-    background: #;
+/*    background: #; */
     float: left;
     width: 100%;
     font: normal 12px Arial;
@@ -1028,9 +1028,9 @@ input#q {
     width: 165px;
     height: 215px;
     left: 5px;
-    object-fit: cover;
+	object-fit: cover;
     top: 33px !important;
-    background: #transparent;
+    background: transparent;
     box-shadow: 0px 0px 1px #999;
     padding: 1px
 }
@@ -1502,7 +1502,7 @@ div div.separator a[style] {
 .post-body.entry-content div iframe {
     display: block;
     width: calc(100% - 5px);
-    height: calc(width *(16/9))px
+    height: auto;
 }
 .widget .widget-item-control a img {
     width: auto;
