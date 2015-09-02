@@ -48,11 +48,11 @@ $(document).ready(function () {
         })
     })
 });
-function imgrs01(i, e, s) {
+function imgrs01(i, s, t) {
     $(i).each(function () {
         $(this).attr({
-            src: $(this).attr("src").replace("/s" + e, "/w" + s),
-            min-width: 225
+            src: $(this).attr("src").replace("/s" + s, "/w" + t),
+            "min-width": 225
         })
     })
 }
@@ -62,7 +62,7 @@ $(function () {
 function imgrs02(t, i, s) {
     $(t).each(function () {
         $(this).attr({
-            src: $(this).attr("src").replace("/s" + i + "-c", "/w" + s),
+            src: $(this).attr("src").replace("/s" + i + "-c", "/w" + s + "-c"),
             width: s
         })
     })
