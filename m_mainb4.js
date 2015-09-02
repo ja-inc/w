@@ -53,7 +53,9 @@ function imgrs01(i, s, t) {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + s, "/w" + t),
             width:"auto",
-            height:"auto"
+            height:"auto",
+            max-width:"500",
+            max-height:"350"
         })
     })
 }
