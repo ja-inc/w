@@ -52,7 +52,7 @@ function imgrs01(i, e, s) {
     $(i).each(function () {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + e, "/w" + s),
-            min-width: s
+            width: s
         })
     })
 }
@@ -63,10 +63,10 @@ function imgrs02(t, i, s) {
     $(t).each(function () {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + i + "-c", "/w" + s),
-            min-width: s
+            width: s
         })
     })
 }
 $(function () {
-    imgrs02("#PopularPosts1 img", "72", "180")
+    imgrs02("#PopularPosts1 img", "72", "80")
 });
