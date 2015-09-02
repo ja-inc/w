@@ -52,7 +52,7 @@ function imgrs01(i, s, t) {
     $(i).each(function () {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + s, "/w" + t),
-            width:"auto",
+            "min-width": 205,
             height:"auto"
         })
     })
