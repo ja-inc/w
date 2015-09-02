@@ -52,8 +52,8 @@ function imgrs01(i, s, t) {
     $(i).each(function () {
         $(this).attr({
             src: $(this).attr("src").replace("/s" + s, "/w" + t),
-            max-width: "500",
-            max-height: "350"
+            max-width: 500,
+            max-height: 350
         })
     })
 }
