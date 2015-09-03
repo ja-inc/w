@@ -157,7 +157,7 @@ input#q{width:100%;float:left;color:#858a94;font:14px/20px Arial,Helvetica,sans-
 .nama-bulan{font:11px Tahoma;color:#fff}
 .sompret-image{width:370px;height:255px;position:relative;line-height:1.6em;overflow:hidden;margin:0;background:#111}
 .sompret-image img{position:absolute;max-width:165px!important;max-height:190px!important;top:55px!important;object-fit:cover;background:transparent;box-shadow:0 0 1px #999;padding:1px;min-width:150px;min-height:150px;right:5px;margin:5px}
-.sompret-image a:hover .summary,.sompret-image a:hover .sompret-footer{float:right;text-align: left}
+.sompret-image a:hover .summary,.sompret-image a:hover .sompret-footer{float:right;text-align:left}
 .sompret-image .sompret-footer,.sompret-image .summary{width:170px;padding:5px;float:left;text-align:right}
 .sompret-image a{display:block;position:relative;overflow:hidden;height:255px;width:370px;color:#878773}
 .sompret-image a:hover{text-decoration:none}
