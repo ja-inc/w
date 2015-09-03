@@ -59,7 +59,7 @@ function imgrs01(i, s, t) {
     })
 }
 $(function () {
-    imgrs01("div .post-body img", "1600", "455"), imgrs01("div .post-body img", "320", "455"), imgrs01("div #related-posts img", "1600", "175"), imgrs01("div #related-posts img", "320", "175")
+    imgrs01("div .post-body img", "1600", "455"), imgrs01("div .post-body img", "320", "455"), imgrs01("div #related-posts img", "1600", "175"), imgrs01("div #related-posts img", "320", "175"), imgrs01("div #menu-wrapper img", "1600", "15")
 });
 function imgrs02(t, i, s) {
     $(t).each(function () {
