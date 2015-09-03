@@ -1,0 +1,20 @@
+#slider1{float:left;width:100%;max-height:400px;margin:30px 0 30px 0;padding:0;position:relative}
+.sliderwrapper{float:left;width:100%;max-height:400px;height:100%;overflow:hidden;margin:0;padding:0}
+.sliderwrapper:hover{opacity:1;filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity:1}
+.sliderwrapper .contentdiv{float:left;width:100%;position:relative;padding:0;margin:0 0 10px 0}
+#paginate-slider1{position:absolute;bottom:43px;right:0;text-align:center;height:13px;z-index:666;display:inline-flex}
+.pagination a{cursor:pointer;text-indent:-9999px}
+.pagination{display:inline;margin:0}
+.pagination a:hover,.pagination a.selected{background-color:#4ebfd0}
+.featuredPost{padding:15px 20px;background-color:rgba(0,0,0,0.2);color:#f5f5f5;width:371px;height:100%;color:#4ebfd0;position:absolute;top:0;right:0;background:rgba(51,53,59,0.70)}
+.featuredPost a{color:#fff}.featuredPost a:hover{color:#dedde5}
+.featuredPost h2{font-size:34px;line-height:normal}
+.sliderpost{width:100%;min-height:400px;margin:0;padding:0;vertical-align:middle}
+img.sliderpost{max-height:460px}
+.thumbE img{min-height:164px}#recent-posts{padding:10px 0}
+.post_wrapper1 .post_thumb{margin-right:2%;float:left;width:85px}
+.post_wrapper1{padding-bottom:20px}
+.post_wrapper1 .post_desc{display:table}
+.post_wrapper1 .post_desc h5{font-size:16px;padding:0;margin:0;font:normal normal 16px Fjalla One,Helvetica,Arial,sans-serif}
+.post_wrapper1 .post_desc .meta{font-size:14px;color:#aaa;text-align:left;float:left;clear:both;display:table;margin-bottom:10px}
+.post_wrapper1 .post_desc p{font-size:14px;clear:both;margin:0;padding:0}
