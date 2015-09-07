@@ -17,7 +17,7 @@ $(document).ready(function () {
         var e = $(this).text(),
             t = e.split(/:\s*/),
             n = $.trim(t[0]);
-        if (console.log(n), t.length > 1 && n.match(/^(Producers|Genre|Writers|Stars|Genres|Directors)$/)) {
+        if (console.log(n), t.length > 1 && n.match(/^(Producers|Genre|Writers|Stars|Genres|Directors|Label)$/)) {
             var i = t[1].split(/\s*,\s*/);
             return n + ": " + $.map(i, function (e) {
                 e = e.replace(/L$/, "");
