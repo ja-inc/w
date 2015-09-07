@@ -73,3 +73,13 @@ function imgrs02(t, i, s) {
 $(function () {
     imgrs02("#PopularPosts1 img", "72", "80")
 });
+function imgsrc(i, s) {
+    $(i).each(function () {
+        $(this).attr({
+            href: $(this).attr("href").replace("/s" + s, "/w1600")
+        })
+    })
+};
+$(function () {
+    imgsrc("div .post-body a", "1600"), imgsrc("div .post-body a", "320")
+});
