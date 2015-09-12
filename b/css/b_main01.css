@@ -1986,7 +1986,7 @@
     display:none
 }
 body {
-    background:#000 url(http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/s1600/body_bg_mid.jpg) no-repeat scroll center 60px;
+    background:#000 url(http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/s1600/body_bg_mid.jpg) no-repeat scroll center 60px / 1922px auto;
     color:#999;
     font:x-small Georgia Serif;
     font-size:small;
