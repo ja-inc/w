@@ -3414,11 +3414,11 @@ div div.separator a[style] {
     padding-right:20px
 }
 @media only screen and (max-width:1200px) {
-body{background: #000 url("http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/w1465/body_bg_mid.jpg";) no-repeat scroll center 60px}
+body{background: #000 url("http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/w1465/body_bg_mid.jpg") no-repeat scroll center 60px}
 #outer-wrapper,#header-wrapper,#footer-wrapper,.credit{width: 800px}
 #headerpic-wrapper,.picfooter,.creditpic{width:860px}
-#main-wrapper{width:600px}
-#sidebar1-wrapper{width:180px}
+#main-wrapper{width:600px !important}
+#sidebar1-wrapper{width:180px !important}
 }
 @media only screen and (max-width:988px){
 #menu-wrapper{position:relative !important;z-index:999 !important}
@@ -3435,6 +3435,8 @@ body{background: #000 url("http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAA
 #menu-wrapper{padding-left:0}
 }
 @media only screen and (max-width:667px) {
+#menu-wrapper{display:none}
+.selectnav{display:inline-block;width:100%}
 }
 .post:nth-child(4n+4) {
 }
