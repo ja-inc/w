@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
 // append css dynamically to head
 var head = document.getElementsByTagName('head');
 var mcss = document.createElement('link');
@@ -11,7 +11,7 @@ head.appendChild(mcss, head.firstChild);
 setTimeout(function () {
     mcss.media = 'all';
 });
-}), $(document).ready(function () {
+$(document).ready(function () {
     selectnav("menu-main", {
         label: "Menu here ",
         nested: !0,
