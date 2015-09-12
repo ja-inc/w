@@ -3414,7 +3414,7 @@ div div.separator a[style] {
     padding-right:20px
 }
 @media only screen and (max-width:1200px) {
-body{background: #000 url(&quot;http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/w1465/body_bg_mid.jpg&quot;) no-repeat scroll center 60px}
+body{background: #000 url("http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/w1465/body_bg_mid.jpg";) no-repeat scroll center 60px}
 #outer-wrapper,#header-wrapper,#footer-wrapper,.credit{width: 800px}
 #headerpic-wrapper,.picfooter,.creditpic{width:860px}
 #main-wrapper{width:600px}
@@ -3426,7 +3426,7 @@ input#q{top:0 !important;left:0;right:0 !important;width:100% !important;z-index
 .freedom{z-index:1001 !important;top:0;right:0;padding:2px 0}
 }
 @media only screen and (max-width:888px){
-body{background: #000 url(&quot;http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/w1133/body_bg_mid.jpg&quot;) no-repeat scroll center 60px}
+body{background: #000 url("http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAAAAAAADcU/tnDkX7Lrizw/w1133/body_bg_mid.jpg") no-repeat scroll center 60px}
 #outer-wrapper,#header-wrapper,#footer-wrapper,.credit{width:600px}
 #headerpic-wrapper,.picfooter,.creditpic{width:660px}
 #main-wrapper{width:400px}
@@ -3435,10 +3435,8 @@ body{background: #000 url(&quot;http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2C
 #menu-wrapper{padding-left:0}
 }
 @media only screen and (max-width:667px) {
-
 }
 .post:nth-child(4n+4) {
-
 }
 @media only screen and (max-width:1085px) {
 }
