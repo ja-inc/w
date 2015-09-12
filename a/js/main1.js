@@ -1,16 +1,4 @@
 
-// append css dynamically to head
-var head = document.getElementsByTagName('head');
-var mcss = document.createElement('link');
-mcss.rel = 'stylesheet';
-mcss.type = 'text/css';
-mcss.href = '//cdn.rawgit.com/ja-inc/w/master/a/css/main01.css';
-mcss.media = 'non-existant-media';
-
-head.appendChild(mcss, head.firstChild);
-setTimeout(function () {
-    mcss.media = 'all';
-});
 $(document).ready(function () {
     selectnav("menu-main", {
         label: "Menu here ",
