@@ -21,7 +21,8 @@ body{background: #000 url("http://4.bp.blogspot.com/-GDnN3_RIUGk/VeJ6W10j2CI/AAA
 #menu-wrapper{padding-left:0}
 }
 @media only screen and (max-width:667px) {
-
+#menu-main{display:none}
+.selectnav{display:inline-block;width:100%}
 }
 .post:nth-child(4n+4) {
 
