@@ -1,0 +1,348 @@
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<style>
+    @font-face {
+        font-family: Pokemon;
+        src: url(//dl.dropbox.com/u/258536/pokefonts/Pokemon%20Hollow.ttf);
+    }
+    .page1 {
+        position:absolute;
+        width:100%;
+    }
+    .menu1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background:#000;
+    }
+    .menu1 li {
+        display:inline-block;
+        padding-left:-10px;
+        text-align:center;
+        padding: 0px 30px;
+        margin: 1px 0px;
+        font: 25px Century Gothic, Verdana;
+        font-family: Pokemon;
+        background: rgba(255, 255, 255, 0.15);
+    }
+    .menu1 li a {
+        color:#fff;
+        text-shadow: 0 0 2px #000;
+        text-decoration: none;
+    }
+    .menu1 li:hover {
+        background: rgba(255, 255, 0, 0.65);
+    }
+    .menu1 li a:hover {
+        color:#000;
+        text-shadow: 0 0 2px #000
+    }
+    .opc {
+        background:rgba(255, 255, 255, 0.65) none repeat scroll 0% 0%;
+    }
+    #content {
+    }
+    .signature-p2 {
+        background:#aaa url("http://orig13.deviantart.net/a634/f/2014/091/d/c/ash_ketchum_by_mighty355-d7cjdfg.png") no-repeat fixed center 20%;
+        background-size: 80%;
+        text-shadow: 0 0 2px #fff;
+        color: #222;
+        box-shadow: 0 0 5px 5px;
+        text-shadow: -1px 0 12px #fff, 0 1px 12px #fff, 1px 0 2px #fff, 0 -1px 2px #fff;
+    }
+    .signature-p2 a {
+        color: #3B2F00;
+        text-shadow: 0 0 1px #fff;
+    }
+    .signature-p2 a:hover {
+        color: #000;
+        text-shadow: 0 0 1px #FFCB00;
+    }
+    .pagem {
+        position:fixed;
+        margin: auto 0;
+        width: calc(100% - 10px);
+        top:-12px;
+        z-index:999;
+    }
+    .menu1 li:hover {
+        -webkit-filter: drop-shadow(5px 5px 5px #f00);
+        filter: drop-shadow(5px 5px 5px #fff);
+        background-size: auto 60px;
+    }
+    #content .c1 img {
+        padding:2px;
+        border:1px solid #000;
+    }
+    #content img {
+        -webkit-filter: drop-shadow(5px 5px 5px #000);
+        filter: drop-shadow(5px 5px 5px #000);
+    }
+    #content img:hover {
+        -webkit-filter: drop-shadow(0px 0px 5px #fff);
+        filter: drop-shadow(0px 0px 5px #fff);
+    }
+    a[href="#home"]:hover {
+        -webkit-filter: drop-shadow(5px 5px 5px #fff);
+        filter: drop-shadow(5px 5px 5px #fff);
+    }
+    .sig2::after {
+        background: url("http://s4.postimg.org/pkpu9pr31/l_Zi_QR9_L.png") no-repeat fixed;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+    #upper, #footer1 {
+        width:100%;
+        position:fixed;
+        box-shadow: 0 0 15px 5px #000;
+        border:3px solid #000;
+        z-index:999;
+    }
+    #upper {
+        top:0;
+    }
+    #footer1 {
+        bottom:0px;
+    }
+</style>
+<div class="signature-p2">
+    <div class="sig2">
+        <div class="opc">
+            <center>
+                <div id="upper"></div>
+                <div id="footer1"></div>
+                <div class="pagem">
+                    <div class="page1">
+                        <ul class="menu1">
+                            <li><a href="#sigs">SIGS</a>
+
+                            </li>
+                            <li><a href="#imgs">IMAGES</a>
+
+                            </li>
+                            <li>
+<a href="#fact">FACTION</a>
+
+                            </li>
+                            <li>
+<a href="#jobs">JOBS</a>
+
+                            </li>
+                            <ul>
+                    </div>
+                </div>
+            </center>
+            <div id="content">
+                <div style="text-align:center">
+                    <div style="height:100px" id="home"></div>
+                    <img alt="" height="491" src="http://i1150.photobucket.com/albums/o620/spelk11/Welcometrainers_zpsefoe7dfh.png" width="561" />
+                    <br />&nbsp;
+                    <div style="height:80px" id="sigs"></div> <a href="#home"><img alt="" height="150" src="http://i1150.photobucket.com/albums/o620/spelk11/Sigs_zpsenflpwcs.png" width="600" /></a>
+
+                    <br />
+                    <br />
+                    <div class="c1">
+                        <img alt="" height="100" src="http://i1331.photobucket.com/albums/w593/InstallGraphics/ashketchum_zpsbiklzacl.png" width="600" />
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1796200">Detox<br /></a>
+
+                        <br />
+                        <img alt="" height="100" src="http://i61.tinypic.com/2ebqssn.jpg" width="600" />
+                        </a>
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=573498">5mith<br /></a>
+
+                        <br />
+                        <img alt="" height="100" src="http://i171.photobucket.com/albums/u299/mjukes/tc%20sigs/ashketchum_zpsbhwxhefx.png" width="600" />
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=520790">Mouse<br /></a>
+
+                        <br />
+                        <img alt="" height="100" src="http://i.imgur.com/SQllBXu.png" width="600" />
+                        </a>
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1914330">Hishy-</a>
+
+                        <br />
+                        <br />
+                        <img alt="" height="100" src="http://dumpt.com/img/files/1wqdvmr8bgu8x9khnclr.jpg" width="600" />
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1899962">Coops1808<br /></a>
+
+                        <br />
+                        <img alt="" height="100" src="http://i1083.photobucket.com/albums/j398/thejamstar/Gengar%20Sig_zpsnigguvoq.png" width="600" />
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=928891">JamFX</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1899962"><img alt="" height="100" src="http://i62.tinypic.com/15dq9s3.jpg" width="600" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1167261">Joe_Kerr</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1899962"><img alt="" height="100" src="http://orig09.deviantart.net/0971/f/2015/098/f/c/for_ashketchum_by_azuriele-d8ovz0p.png" width="535" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1889643">azuriolinist<br />
+<br />
+<img alt="" height="150" src="http://oi60.tinypic.com/3czds.jpg" width="500" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1904814">HerrbalNinjaa</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1889643"><img alt="" height="150" src="http://i1278.photobucket.com/albums/y505/jojostev/Untitled-21_zpseiowvwuq.jpg" width="500" /><br />
+<br />
+<img alt="" height="150" src="http://i1278.photobucket.com/albums/y505/jojostev/Ash21_zpscvrsnyhw.jpg" width="500" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1914783">Jaysteve<br />
+<br />
+<img alt="" height="200" src="http://s23.postimg.org/nw4usi32z/pokemon.png" width="500" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1831700">Saeger</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1899962"><img alt="" height="200" src="https://s3.amazonaws.com/profileimages.torn.com/4e9261a0-7848-4c73-928891.png" width="500" /></a>
+
+                        <br />Made by <a href="http://www.torn.com/profiles.php?XID=928891">Jam_</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1899962"><img alt="" height="200" src="http://s15.postimg.org/hna2gj2fv/Signature_35.png" width="500" /><br />
+<br />
+<img alt="" height="200" src="http://s3.postimg.org/ddioewgyb/Untitled_1.png" width="500" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1830552">Sinster</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1914783"><img alt="" height="250" src="http://s22.postimg.org/nc1q2hb0x/ask.png" width="500" /></a>
+
+                        <br />Made by <a href="http://www.torn.com/profiles.php?XID=1834353">Deadly_Dingo</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1830552"><img alt="" height="200" src="http://i60.tinypic.com/24o2348.png" width="450" /></a>
+
+                        <br />Made by <a href="http://www.torn.com/profiles.php?XID=1802205">Legalize</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1830552"><img alt="" height="200" src="http://oi62.tinypic.com/2s7gx91.jpg" width="450" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1583524">Rune_</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1830552"><img alt="" height="250" src="http://i1261.photobucket.com/albums/ii595/Kamrul_10/Snoralx%20attempt%20one_zps3uj0zbyy.jpg" width="450" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=948631">Ruhul</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1899962"><img alt="" height="175" src="http://s3.amazonaws.com/profileimages.torn.com/4d64a592-0dfa-3617-1892819.jpg" width="450" /><br />
+<br />
+<img alt="" height="175" src="http://s3.amazonaws.com/profileimages.torn.com/4d64a592-ba02-5b49-1892819.jpg" width="450" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1892819">Lumosity<br />
+<br />
+<img alt="" height="220" src="http://i61.tinypic.com/2jcc09s.png" width="400" /></a>
+
+                        <br />Made by <a href="http://www.torn.com/profiles.php?XID=1942358">Dorkula</a>
+
+                        <br />
+                        <br />
+<a href="http://www.torn.com/profiles.php?XID=1892819"><img alt="" height="260" src="http://orig05.deviantart.net/1615/f/2015/098/c/9/06_by_intrepid_misfortune-d8oxyi3.png" width="410" /></a>
+
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1907953">TwoThirdsAFool<br /></a>
+
+                        <br />
+                        <img alt="" height="222" src="http://img05.deviantart.net/4dce/i/2015/104/d/9/celebi_by_coops1808-d8poko0.jpg" width="400" />
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1899962">BardockObama<br />
+<br /></a>
+
+                        <img alt="" height="170" src="http://i.imgur.com/ezbfkXZ.png" width="374" />
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=1919908">Daashy</a>
+
+                    </div>
+                    <br />
+                    <br />
+                    <div style="height:100px" id="imgs"></div> <a href="#home"><img alt="" height="150" src="http://i1150.photobucket.com/albums/o620/spelk11/Images_zps2oey699g.png" width="600" /></a>
+
+                    <br />
+                    <div class="c1">
+                        <img alt="" height="262" src="http://i1150.photobucket.com/albums/o620/spelk11/team_zpsatxr5hkn.jpg" width="600" />
+                    </div>
+                    <br />
+                    <br />
+                    <img alt="" height="150" src="http://i1148.photobucket.com/albums/o564/boosth/Ashketchum%20winner%201m_zpsbfoh0lmu.png" width="720" />
+                    <br />Made by <a href="http://www.torn.com/profiles.php?XID=311618">T_O_R_NC_I_T_Y<br /></a>
+
+                    <br />
+                    <div class="c1">
+                        <img alt="" height="279" src="http://i.imgur.com/hgN6AoO.jpg" width="499" />
+                        <br />Made by&nbsp;<a href="http://www.torn.com/profiles.php?XID=258120">Harley</a>
+
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <div style="height:100px" id="fact"></div> <a href="#home"><img alt="" height="150" src="http://i1150.photobucket.com/albums/o620/spelk11/Faction_zpssqafijsr.png" width="600" /></a>
+
+                    <br />
+                    <br />
+                    <div class="c1"> <a href="http://www.torn.com/factions.php?step=profile&amp;ID=32395"><img alt="" height="100" src="http://factionimages.torn.com/56960f2a-977a-bf23-243153.png" width="400" />
+                
+                <div style="text-align:center">
+    Team Salad<br />
+<br />
+<img alt="" height="244" src="http://i.imgur.com/YWo71no.gif" width="500" /></a>
+
+                        <br />&nbsp;</div>
+                </div>
+                <div style="height:100px" id="jobs"></div> <a href="#home"><img alt="" height="150" src="http://i1150.photobucket.com/albums/o620/spelk11/Job_zpsrly7yvg5.png" width="600" /></a>
+
+                <br />
+                <div class="c1"><a href="http://www.torn.com/joblist.php#/p=corpinfo&amp;ID=24806">
+                    <img alt="" height="100" src="http://www.torn.com/images/defaultuser2.jpg" width="400" />
+                    <br />
+          
+                <br />
+hiring 30k man for 500k - Fitness Center</a> 
+                </div>
+                <br />
+                <br />--------------------------------------------------------------------------------------------
+                <br />
+                <br />
+<em>&#39;Our deepest fear is not that we are inadequate. Our deepest fear&nbsp;is that we are</em>
+
+                <br />
+<em>powerful beyond measure. It is our light, not our darkness, that most frightens us. </em>
+
+                <br />
+<em>Your playing small does not serve the world. There is nothing enlightened&nbsp;about shrinking</em>
+
+                <br />
+<em>so that&nbsp;other people won&#39;t feel insecure around you.&nbsp;We are all meant to shine as children do. </em>
+
+                <br />
+<em>It&#39;s not just in some of us; it is in everyone. And as we let our own lights shine,</em>
+
+                <br />
+<em>we unconsciously give other people permission to do the same.</em>
+
+                <br />
+<em>As we are liberated from our own fear, our presence automatically liberates others.&#39;</em>
+
+                <br />
+                <br />--------------------------------------------------------------------------------------------
+                <br />
+                <br />
+                <img alt="" height="491" src="http://i1150.photobucket.com/albums/o620/spelk11/Goodbye_zpse5r50plm.png" width="561" />
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<p style="text-align: right;"><span style="font-size:8px;"><em>Created by <a href="http://www.torn.com/forums.php?p=threads&amp;f=23&amp;t=15952653&amp;b=0&amp;a=0">Jheb Krueger</a></em></span>
+
+</p>
