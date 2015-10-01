@@ -1,0 +1,231 @@
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<style type="text/css">
+@font-face {
+    font-family: SAO;
+    src: url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr4-67659ICLY8bMrYhtePPA.woff2);
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+#sig-body {
+    background: #000 url("http://s28.postimg.org/z9cz56ncb/fh_night.png") no-repeat fixed center center;
+    width: 100%;
+    box-shadow: 0 0 5px 5px #000055;
+    z-index:0;
+    min-height:420px;
+    overflow:hidden;
+}
+#sig-head {
+    position: fixed;
+    color: #fff;
+    width: calc(100% - 15px);
+    height: 40px;
+    Font-family: sao;
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 0 100px 1px #000;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    z-index:9999;
+}
+#sig-head:hover {
+}
+#menu1, #menu2 {
+    padding:5px;
+    margin:0;
+}
+#menu1 {
+    float:left;
+}
+#menu2 {
+    float:right;
+}
+#menu1 li, #menu2 li {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0 15px;
+    margin: 0;
+    min-width: 50px;
+}
+#menu2 li {
+}
+#menu1 li:hover, #menu2 li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+#menu1 li a:hover, #menu2 li a:hover {
+    filter: drop-shadow(0px 0px 5px #fff);
+    text-shadow: 0 0 2px #fff;
+    color: #000;
+}
+#opc-body {
+    background: rgba(0, 0, 0, 0.05);
+    min-width:95%;
+    min-height:420px;
+    position: fixed;
+    top:0px;
+    overflow:hidden;
+}
+#content {
+    margin-top:100px;
+    float:left;
+    margin-left:80px;
+    color:#fff;
+    font-family: sao;
+    background: rgba(0, 0, 0, 0.15) url("");
+    text-shadow: 0 0 2px #000;
+    padding:15px;
+}
+#content ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#content ul li div {
+    min-width:70px;
+    float:left;
+    text-align:left;
+}
+#creator, #creator a:hover {
+    color: #000;
+    text-shadow: 0 0 2px #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+#creator:hover, #creator a {
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    background: rgba(0, 0, 0, 0.05);
+}
+</style>
+<script type="text/javascript">
+//<[!CDATA[
+function menu2c(act) {
+    $("#about, #talk, #default, #clockn").css("display", "none");
+    var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+    if (act == "about") {
+        $("#about").css("display", "");
+    } else if (act == "talk") {
+        var myArray = ['Hello......', 'What... ?', "Look's can be deceiving, Don't take a chance ! ","Maybe next time, I am busy right now.","What are you thinking about graphics ?", "Uhm... Who are you?"]; 
+        var rand = myArray[Math.floor(Math.random() * myArray.length)];
+        if (18 > h & h > 5) {
+            document.getElementById('talk').innerHTML = rand;
+        } else {
+            document.getElementById('talk').innerHTML = "Hmmmm......... [snooze]";
+        }
+        $("#talk").css("display", "");
+    } else if (act == "clockn") {
+        
+        if (18 > h & h > 5) {
+            document.getElementById('clockn').innerHTML = "Its just " + h + ":" + m + ", Are you feel sleepy?";
+        } else  {
+            document.getElementById('clockn').innerHTML = "Its already " + h + ":" + m + ", I am sleeping right now!";
+        };
+        $("#clockn").css("display", "");
+    } else {
+        $("#default").css("display", "");
+    };
+}
+
+function menu1(time) {
+    if (time == "day") {
+        $('#sig-body').css("box-shadow", "0 0 5px 5px #005500");
+        $('#sig-body').css("background-image", "url('http://s28.postimg.org/3od01ofcb/fh_day.png')");
+        $('#sig-head').css("background", "rgba(0, 0, 0, 0.15)");
+    } else if (time == "night") {
+        $('#sig-body').css("box-shadow", "0 0 5px 5px #000055");
+        $('#sig-body').css("background-image", "url('http://s28.postimg.org/z9cz56ncb/fh_night.png')");
+        $('#sig-head').css("background", "rgba(255, 255, 255, 0.15)");
+    }
+    console.log(time, background, $('#sig-body'))
+};
+
+$(function timess() {
+    var d = new Date();
+    var n = d.getHours();
+    if (18 > n & n > 5) {
+        $('#sig-body').css("box-shadow", "0 0 5px 5px #005500");
+        $('#sig-body').css("background-image", "url('http://s28.postimg.org/3od01ofcb/fh_day.png')");
+        $('#sig-head').css("background", "rgba(0, 0, 0, 0.15)");
+    } else {
+        $('#sig-body').css("box-shadow", "0 0 5px 5px #000055");
+        $('#sig-body').css("background-image", "url('http://s28.postimg.org/z9cz56ncb/fh_night.png')");
+        $('#sig-head').css("background", "rgba(255, 255, 255, 0.15)");
+    };
+});
+
+$(function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML = h + ":" + m + "<span style='font-size:12px'>: " + s + "</span>";
+    var t = setTimeout(startTime, 500);
+})
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i
+    }; // add zero in front of numbers < 10
+    return i;
+}
+//]]>
+</script>
+<center>
+    <div id="sig-head">
+        <ul id="menu1">
+            <li><a href="#" onclick="menu1('day')">☼</a>
+
+            </li>
+            <li><a href="#" onclick="menu1('night')">☽</a>
+
+            </li>
+        </ul>
+        <ul id="menu2">
+            <li><a href="#talk" onclick="menu2c('talk')">Talk</a>
+            </li>
+            <li><a href="#about" onclick="menu2c('about')">About</a>
+            </li>
+            <li><a href="#clockn" onclick="menu2c('clockn')"><div id="clock"></div></a>
+            </li>
+        </ul>
+    </div>
+    <div id="sig-body">
+        <div id="opc-body">
+            <img src="http://img10.deviantart.net/6162/i/2014/063/5/3/asuna_yuuki_vector_by_assassinwarrior-d78ux1f.png" width="200px" style="right:15px;position:fixed;bottom:0px;-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1); -webkit-transform: scaleX(-1);   transform: scaleX(-1); filter: FlipH;    -ms-filter: 'FlipH';" />
+            <br />
+            <div id="content">
+                <div>
+                    <ul id="about" style="display:none;">
+                        <li>
+                            <div>Name :</div>
+                            <div>NicoNico [1551825]</div>
+                        </li>
+                        <li>
+                            <div>Status :</div>
+                            <div>Civilian</div>
+                        </li>
+                        <li>
+                            <div></div>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div></div>
+                            <div></div>
+                        </li>
+                    </ul>
+                    <div id="default">Welcome to my Profile...
+                        <br />Look's can be deceiving, Don't take a chance.</div>
+                    <div id="talk" style="display:none"></div>
+                    <div id="clockn" style="display:none"></div>
+                </div>
+            </div>
+            <p style="text-align: left; position: fixed; bottom: 0px; left: 15px;" id="creator"><span style="font-size:8px"><em>Created by <a href="http://www.torn.com/forums.php?p=threads&amp;f=23&amp;t=15952653&amp;b=0&amp;a=0">Jheb Krueger</a></em></span>
+
+            </p>
+        </div>
+    </div>
+</center>
