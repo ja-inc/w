@@ -4,15 +4,15 @@ $(function () {
     params = 
     {
         betTypes:{'straight':1, 'split':2, 'street':3, 'corner':4, 'line':6, 'column':7, 'dozen': 8, 'redorblack':9, 'evenorodd':10, 'loworhigh':11},
-        gravity: 0,          
-        bounceExtinction: 0,
-        ball0Acc: 1, 
+        gravity: 99.9,          
+        bounceExtinction: 999.9,
+        ball0Acc: 9.9, 
         ball0Orbit : 117,
         ballWidth:6,
-        wheelMinVel: 0.1, 
+        wheelMinVel: 9.9, 
         wheelMaxVel: 1,
-        wheel0Acc: 0.04,
-        wheel0Friction: 0.001,
+        wheel0Acc: 9.9,
+        wheel0Friction: 9.9,
         axisRad: 14,
         oneSlot: 360/37,
         slotsOuterR: 85,
@@ -28,7 +28,7 @@ $(function () {
     var chip = function(id)
     {
         this.chipAtHome = true;
-        this.nominal = id;
+        this.nominal = 7;
         this.chipContainer = $('<div class="chipCont" nominal=' + id + '>');
         this.chipContainer.css({'background-position': "-45px -" + ((id-1) * 53.5) + "px"});
         this.chipContainer.data('highlightable', true);
