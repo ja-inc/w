@@ -1,0 +1,68 @@
+<script src="//code.jquery.com/jquery-1.11.3.js"></script>
+<style type="text/css">/*<![CDATA[*/@font-face{font-family:SAO;src:url(//fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr4-67659ICLY8bMrYhtePPA.woff2)}a{text-decoration:none;color:#fff!important}a:hover{color:#000!important;text-shadow:0 0 2px #fff}#sig-body{background:#000 url("//s28.postimg.org/z9cz56ncb/fh_night.png") no-repeat fixed center center;width:100%;box-shadow:0 0 5px 5px #005;z-index:0;Font-family:SAO,Century Gothic,Verdana;min-height:420px;overflow:hidden;max-height:700px;max-width:1270px}#sig-head{position:fixed;color:#fff;width:calc(100% - 15px);height:40px;Font-family:SAO,Century Gothic,Verdana;text-shadow:0 0 5px #000;box-shadow:0 0 100px 1px #000;font-size:20px;background:rgba(255,255,255,0.15);z-index:9999}#menu1,#menu2{padding:5px;margin:0}#menu1{float:left}#menu2{float:right}#menu1 li,#menu2 li{display:inline-block;background:rgba(0,0,0,0.15);padding:0 15px;margin:0;min-width:50px}#menu1 li:hover,#menu2 li:hover{background:rgba(0,0,0,0.45)}#menu1 li a:hover,#menu2 li a:hover{filter:drop-shadow(0px 0 5px #fff);text-shadow:0 0 2px #fff;color:#000}#opc-body{min-width:calc(100% - 15px);min-height:calc(100% - 20px);position:absolute;top:10px;overflow:hidden}#content{margin-top:50px;float:left;margin-left:50px;color:#fff;Font-family:SAO,Century Gothic,Verdana;background:rgba(0,0,0,0.15) url("");text-shadow:0 0 2px #000;padding:15px}#content ul{list-style-type:none;margin:0;padding:0}#content ul li div{min-width:70px;float:left;text-align:left}#content ul li div:nth-child(2){width:160px}#creator,#creator a:hover{color:#000;text-shadow:0 0 2px #fff;background:rgba(255,255,255,0.05)}#creator:hover,#creator a{color:#fff;text-shadow:0 0 2px #000;background:rgba(0,0,0,0.05)}#talk img{width:120px;float:left;margin-right:15px;opacity:.75;padding:2px;border:1px solid #fff;box-shadow:0 0 5px #000}#talk img:hover,.slidesjs-control img:hover{opacity:1}#talk{text-align:center;vertical-align:middle;line-height:120px}.carousel-inner>.item>img,.carousel-inner>.item>a>img{width:100%;max-height:235px;margin:auto}.slidesjs-container{width:460px;height:240px!important;margin-bottom:5px;box-shadow:0 0 2px #fff}.slidesjs-pagination{width:100%}.slidesjs-pagination li,.slidesjs-previous,.slidesjs-next{display:inline-block;padding:0 5px;margin-right:1px;background:rgba(255,255,255,0.15)}.slidesjs-pagination li:hover,.slidesjs-previous:hover,.slidesjs-next:hover{background:rgba(0,0,0,0.15)}.slidesjs-pagination{background:rgba(255,255,255,0.05)}.slidesjs-control img{top:5px!important;left:5px!important;max-height:230px;max-width:450px;opacity:.75;padding:2px;box-shadow:0 0 5px #fff}.slidesjs-previous{float:left;content:"<"}.slidesjs-next{float:right;content:">"}/*]]>*/</style>
+<script src="//www.slidesjs.com/js/jquery.slides.min.js"></script>
+<script type="text/javascript">/*<![CDATA[*/function menu2c(d){$("#about, #talk, #default, #clockn").css("display","none");var j=new Date();var l=j.getHours();var h=j.getMinutes();if(d=="about"){$("#about").css("display","")}else{if(d=="talk"){var k=["Hello......","What... ?","Look's can be deceiving, Don't take a chance ! ","Maybe next time, I am busy right now.","What are you thinking about graphics ?","Uhm... Who are you?"];var m=k[Math.floor(Math.random()*k.length)];if(18>l&l>5){if(m==k[5]){var n="<img src='//s19.postimg.org/d02jbdu1r/fh_asuna_fc_05.png' />"}else{if(m==k[4]){var n="<img src='//s19.postimg.org/g37ushye7/fh_asuna_fc_18_20.png' />"}else{if(m==k[3]){var n="<img src='//s19.postimg.org/59vr68rq7/fh_asuna_fc_13.png' />"}else{if(m==k[2]){var n="<img src='//s19.postimg.org/fmmn62an3/fh_asuna_fc_18.png' />"}else{if(m==k[1]){var n="<img src='//s19.postimg.org/tucbupnbz/fh_asuna_fc_13_14.png' />"}else{var n="<img src='//s19.postimg.org/4vuf6n7mn/fh_asuna_fc_17_18.png' />"}}}}}document.getElementById("talk").innerHTML=n+m}else{document.getElementById("talk").innerHTML="Hmmmm......... [snooze...]<br />(Come back at 6am.)"}$("#talk").css("display","")}else{if(d=="clockn"){if(18>l&l>5){document.getElementById("clockn").innerHTML="Its just "+l+":"+h+", Are you feel sleepy?"}else{document.getElementById("clockn").innerHTML="Its already "+l+":"+h+", I am sleeping right now!"}$("#clockn").css("display","")}else{$("#default").css("display","")}}}}function menu1(b){if(b=="day"){$("#sig-body").css("box-shadow","0 0 5px 5px #005500");$("#sig-body").css("background-image","url('//s19.postimg.org/ds9sobnmp/fh_day.png')");$("#sig-head,#opc-body").css("background","rgba(0, 0, 0, 0.05)")}else{if(b=="night"){$("#sig-body").css("box-shadow","0 0 5px 5px #000055");$("#sig-body").css("background-image","url('//s19.postimg.org/k78tkzuch/fh_night.png')");$("#sig-head,#opc-body").css("background","rgba(255, 255, 255, 0.05)")}}console.log(b,background,$("#sig-body"))}$(function timess(){var d=new Date();var c=d.getHours();if(18>c&c>5){$("#sig-body").css("box-shadow","0 0 5px 5px #005500");$("#sig-body").css("background-image","url('//s19.postimg.org/ds9sobnmp/fh_day.png')");$("#sig-head,#opc-body").css("background","rgba(0, 0, 0, 0.05)")}else{$("#sig-body").css("box-shadow","0 0 5px 5px #000055");$("#sig-body").css("background-image","url('//s19.postimg.org/k78tkzuch/fh_night.png')");$("#sig-head,#opc-body").css("background","rgba(255, 255, 255, 0.05)")}});$(function(){$("#slides").slidesjs({width:940,height:528,play:{effect:"fade",interval:5000,auto:true,swap:false,pauseOnHover:true,restartDelay:2500},effect:{fade:{speed:1000,crossfade:true}}})});$(function startTime(){var f=new Date();var h=f.getHours();var g=f.getMinutes();var i=f.getSeconds();g=checkTime(g);i=checkTime(i);document.getElementById("clock").innerHTML=h+":"+g+"<span style='font-size:12px'>: "+i+"</span>";var j=setTimeout(startTime,500)});function checkTime(b){if(b<10){b="0"+b}return b};/*]]>*/</script>
+<center>
+<div id="sig-head">
+<ul id="menu1">
+<li><a href="#" onclick="menu1('day')">☼</a>
+</li>
+<li><a href="#" onclick="menu1('night')">☽</a>
+</li>
+</ul>
+<ul id="menu2">
+<li><a href="#default" onclick="menu2c('default')">Home</a>
+</li>
+<li><a href="#talk" onclick="menu2c('talk')">Talk</a>
+</li>
+<li><a href="#about" onclick="menu2c('about')">About</a>
+</li>
+<li><a href="#clockn" onclick="menu2c('clockn')"><div id="clock"></div></a>
+</li>
+</ul>
+</div>
+<div id="sig-body">
+<img src="//s19.postimg.org/lty1686eb/fh_asuna.png" width="200px" style="right:15px;position:absolute;bottom:0px" />
+<br />
+<div id="opc-body">
+<div id="content">
+<div>
+<ul id="about" style="display:none">
+<li>
+<div>Name</div>
+<div>: NicoNico [1551825]</div>
+</li>
+<li>
+<div>Status</div>
+<div>: Civilian</div>
+</li>
+<li>
+<div>Country</div>
+<div>: England</div>
+</li>
+<li>
+<div></div>
+<div></div>
+</li>
+</ul>
+<div id="default">Welcome to my Profile...
+<br />Look's can be deceiving, Don't take a chance.
+<br />
+<div id="slides">
+<img src="//s19.postimg.org/ryv3tjaar/fh_asn_h3.png" />
+<img src="//s19.postimg.org/iyqi9ce77/fh_asn_h2.jpg" />
+<img src="//s19.postimg.org/rv1ada4tf/fh_asn_h1.jpg" />
+<img src="//s19.postimg.org/surl8zjz7/fh_asn_h4.jpg" />
+<img src="//s19.postimg.org/3tuebtq03/fh_asn_h5.png" />
+<img src="//s19.postimg.org/efe9ntwbn/fh_asn_h6.png" />
+</div>
+</div>
+<div id="talk" style="display:none"></div>
+<div id="clockn" style="display:none"></div>
+</div>
+</div>
+<p style="text-align:left;position:fixed;bottom:0;left:15px" id="creator"><span style="font-size:8px"><em>Created by <a href="//www.torn.com/forums.php?p=threads&amp;f=23&amp;t=15952653&amp;b=0&amp;a=0">Jheb Krueger</a></em></span>
+</p>
+</div>
+</div>
+</center>
