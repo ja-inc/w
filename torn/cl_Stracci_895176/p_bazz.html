@@ -17,22 +17,23 @@
   src: local('Shadows Into Light Two'), local('ShadowsIntoLightTwo-Regular'), url(https://fonts.gstatic.com/s/shadowsintolighttwo/v4/gDxHeefcXIo-lOuZFCn2xbIfIbZrEcH2WW587lG91II.woff2) format('woff2');
 }
 #signature {
-    width:740px;
-    background:url('http://s19.postimg.org/ot1v6aiub/jacket00.jpg');
-    height:200px;
-    border:1px solid rgba(0, 0, 0, 0.35);
-    box-shadow:0 0 5px rgba(0, 0, 0, 0.95);
-    text-align:left;
-    position:relative;
+background: transparent url("http://s19.postimg.org/ujwmxrg83/jacket01.jpg") no-repeat scroll 0% 0%;
+border: 1px solid rgba(0, 0, 0, 0.35);
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.95);
+text-align: left;
+position: relative;
+width: 100%;
+min-height: 400px;
+background-position: 100% 100%;
 }
 .opc {
-    position:absolute;
-    top:10px;
-    left:10px;
-    width:720px;
-    height:180px;
-    background:rgba(255, 255, 255, 0.15);
-    box-shadow:0 0 5px #000;
+position: absolute;
+top: 10px;
+left: 10px;
+width: calc(100% - 20px);
+height: calc(100% - 20px);
+background: rgba(255, 255, 255, 0.15) none repeat scroll 0% 0%;
+box-shadow: 0px 0px 5px #000;
 }
 h1, p {
     padding:0px 35px;
@@ -40,15 +41,15 @@ h1, p {
     font-weight:bold;
 }
 h1 {
-    font-family:'Rock Salt', cursive;
-    font-size:25px;
-    text-shadow:0 0 5px #fff;
+    font-family: "Rock Salt",cursive;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px #FFF;
 }
 p {
-    margin-top:0px;
-    font-family:'Shadows Into Light', cursive;
-    font-size:25px;
-    text-shadow:0 0 10px #fff;
+margin-top: 15px;
+font-family: "Shadows Into Light",cursive;
+font-size: 20px;
+text-shadow: 0px 0px 10px #FFF;
 }
 h1 div {
     display:inline-block;
@@ -60,14 +61,15 @@ h1 div:hover {
     position:relative;
 }
 .bazar{
-    position:absolute;
-    bottom:10px;
-    left:10px;
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size:18px;
-    text-shadow:0 0 5px rgba(255,255,255,0.95);
-    padding:5px 10px;
-    background:rgba(255,255,255,0.05);
+position: absolute;
+bottom: 10px;
+left: 10px;
+font-family: "Shadows Into Light Two",cursive;
+font-size: 18px;
+text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.95);
+padding: 5px 10px;
+background: rgba(255, 255, 255, 0.05) none repeat scroll 0% 0%;
+max-width: calc(100% - 40px);
 }
 a,.bazar:hover{
     text-decoration:none;
