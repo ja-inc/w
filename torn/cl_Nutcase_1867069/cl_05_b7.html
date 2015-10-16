@@ -1,142 +1,155 @@
-<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-<style type="text/css">
-    #signature {
-        background: url("http://shopdogboutique.com/img/hero-bg.png") repeat;
-        text-shadow: 0 0 3px #fff;
-        font: 14px Century Gothic;
+<style type='text/css'>
+    @font-face {
+        font-family:'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Cinzel-Regular'), url(https://fonts.gstatic.com/s/cinzel/v4/zOdksD_UUTk1LJF9z4tURA.woff2) format('woff2');
     }
-    a {
-        color:#550000;
+    @font-face {
+        font-family:'Amatic SC';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Amatic SC'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v8/DPPfSFKxRTXvae2bKDzp5FtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
     }
-    a:hover {
-        color:#AA5555;
-        text-shadow: 0 0 2px #000;
+    @font-face {
+        font-family:'Dancing Script';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Dancing Script'), local('DancingScript'), url(https://fonts.gstatic.com/s/dancingscript/v6/DK0eTGXiZjN6yA8zAEyM2Ud0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
     }
-    #signature img, #title {
-        filter: drop-shadow(0px 0px 5px #550000);
-        text-shadow: 0 0 0px #550000;
-        font:25px Century Gothic, Impact;
+    @font-face {
+        font-family:'Special Elite';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Special Elite'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v6/9-wW4zu3WNoD5Fjka35JmzxObtw73-qQgbr7Be51v5c.woff2) format('woff2');
     }
-    #opc {
-        background:rgba(5, 0, 0, 0.45);
+    .signature {
+        background:rgba(0, 0, 0, 1.0) url('http://s19.postimg.org/k6hg2nc2r/background1.jpg') no-repeat;
+        background-position:center 100%;
+        background-size:120% auto;
+        max-width:740px;
+        min-height:240px;
+        border:1px solid rgba(0, 0, 0, 0.15);
+        position:relative;
+        color:#fff;
+        box-shadow:0 0 5px #000;
     }
-    #signature img:hover, #title:hover {
-        filter: drop-shadow(0px 0px 5px #ff0000);
-        background:rgba(5, 0, 0, 0.03);
+    .opc {
+        background:rgba(0, 0, 0, 0.25);
+        position:absolute;
+        left:10px;
+        top:10px;
+        padding:10px;
+        width:calc(100% - 40px);
+        height:calc(100% - 40px);
     }
-    #header {
-        background:rgba(255, 255, 255, 0.45);
-        width:100%;
-        box-shadow: 0 0 55px 1px #fff;
+    h1 {
+        padding:0;
+        margin:0 auto;
+        overflow:hidden;
+        position:relative;
+        max-height:80px;
+        font-size:25px;
+        font-family:'Cinzel', serif;
+        background:rgba(255, 255, 255, 0.35);
+        box-shadow:0 0 5px 2px rgba(255, 255, 255, 0.35);
+        text-shadow:2px 2px 2px #000;
+    }
+    h1 div {
+        display:inline-block;
+        position:relative;
+        vertical-align:middle;
+    }
+    h1 p {
+        font-family:'Amatic SC', cursive;
+        font-size:25px;
+        text-shadow:0 0 5px #000;
+        margin:0px;
+    }
+    h1 img {
+        max-height:80px;
+        position:relative;
+        filter:drop-shadow(0 0 5px rgba(255, 255, 255, 0.15));
+        background:rgba(255, 255, 255, 1);
+        box-shadow:0 0 5px rgba(255, 255, 255, 0.75);
+        margin:0 10px;
+        opacity:0.85;
+    }
+    h1 img:hover {
+        filter:drop-shadow(0 0 5px rgba(255, 255, 255, 0.55));
+        box-shadow:0 0 5px rgba(255, 255, 255, 0.55);
+        opacity:1;
+    }
+    .body {
+        font-family:'Special Elite', cursive;
+        margin-top:10px;
+        background:rgba(255, 255, 255, 0.25);
+        text-shadow:0 0 5px rgba(0, 0, 0, 0.95);
+        box-shadow:0 0 5px 2px rgba(255, 255, 255, 0.15);
+    }
+    h4 {
+        margin:0;
+        font-family:'Dancing Script', cursive;
+        font-weight:normal;
+        font-size:20px;
+    }
+    ul {
+        list-style-type:none;
+    }
+    ul li {
+        text-align:center;
+        position:relative;
+        display:inline-block;
+        padding: 5px 15px;
+        min-width:40px;
+        background:rgba(0, 0, 0, 0.15);
+        margin:0 5px 10px 5px;
+        -webkit-transition: -moz-transform .3s ease-out;
+        -moz-transition: -webkit-transform .3s ease-out;
+    }
+    ul li:hover {
+        background:rgba(0, 0, 0, 0.75);
+        text-shadow:0 0 10px #fff;
+        box-shadow:0 0 5px rgba(0, 0, 0, 0.65);
+        -moz-transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        transform: scale(1.15);
         z-index:999;
     }
-    #body {
-        background:rgba(0, 0, 0, 0.15);
-    }
-    #lists {
-        width:99%;
-        margin: auto 0;
-    }
-    #trlist {
-        padding:0;
-    }
-    #trlist li {
-        display:inline-block;
-        padding:0 10px;
-        margin:1px;
-        background:rgba(255, 255, 255, 0.45);
-        min-width: 50px;
-    }
-    #trlist li:hover {
-        background:rgba(55, 0, 0, 0.45);
-        color:#fff;
-        text-shadow:0 0 2px #000;
+    hr {
+        margin:0
     }
 </style>
-<div id="signature" dir="ltr" style="text-align: left;" trbidi="on">
-    <div id="opc">
-        <center>
-            <div id="header">
-                <img alt="" data-cke-saved-src="http://beta.tickalook.com/upload/wiki/men/bag/briefcase.png" src="http://beta.tickalook.com/upload/wiki/men/bag/briefcase.png" style="height: 200px; width: 200px;" />
-                <br /> <span id="title">&nbsp;&nbsp;THE NUT'S CASE&nbsp;&nbsp;<br /><span style="font:13px Century Gothic"><i>Don't let your nuts end up in the case!</i></span></span>
-                <br />
-                <br />
-<span style="font-family: trebuchet ms,helvetica,sans-serif;"><i>The number one Bazaar with lowest prices ever you may know !!</i></span>
+<center>
+    <div class='signature'>
+        <div class='opc'>
+             <h1><div><img src='http://beta.tickalook.com/upload/wiki/men/bag/briefcase.png' /> </div><div>THE NUT'S CASE<hr /><p>Don't let your nuts end up in the case!</p></div></h1>
 
-                <hr />
-            </div>
-            <div id="body">
-                <br /><b>TRADING THE FOLLOWING ITEMS</b>
+            <div class='body'>
+                 <h4>The number one Bazaar with lowest prices ever you may know !!</h4>
 
-                <br />
-                <div id="lists">
-                    <ul id="trlist">
+                <br />TRADING THE FOLLOWING ITEMS
+                <ul>
+                    <marquee>
                         <li>Boxing Gloves</li>
-                        <li>Box Of Medical Supplies
-                            <li>Cans</li>
-                            <li>Casino Passes</li>
-                            <li>Cesium</li>
-                            <li>Donator Packs</li>
-                            <li>Drug Packs</li>
-                            <li>FHCs</li>
-                            <li>Flowers</li>
-                            <li>Plushies</li>
-                            <li>Properties</li>
-                            <li>Skateboards</li>
-                            <li>Xanax</li>
-                    </ul>
-                </div>__________________________________
-                <br />
-                <br />What are you waiting for?
-                <br />
-                <div id="lists">
-                    <ul id="trlist">
-                        <li><a href="#about" onclick="if (document.getElementById('about').style.display != '') {
-    document.getElementById('about').style.display = '';
-    document.getElementById('trade').style.display = 'none';
-    document.getElementById('contact').style.display = 'none';
-} else {
-    document.getElementById('about').style.display = 'none';
-}" type="button" value="Show Content"> About Me </a>
-
-                        </li>
-                        <li><a href="#trade" onclick="if (document.getElementById('trade').style.display != '') {
-    document.getElementById('about').style.display = 'none';
-    document.getElementById('trade').style.display = '';
-    document.getElementById('contact').style.display = 'none';
-} else {
-    document.getElementById('trade').style.display = 'none';
-}" type="button" value="Show Content"> Trade Now </a>
-
-                        </li>
-                        <li><a href="#contact" onclick="if (document.getElementById('contact').style.display != '') {
-    document.getElementById('about').style.display = 'none';
-    document.getElementById('trade').style.display = 'none';
-    document.getElementById('contact').style.display = '';
-} else {
-    document.getElementById('contact').style.display = 'none';
-}" type="button" value="Show Content"> Contact Me</a>
-
-                        </li>
-                    </ul>
-                </div>__________________________________
-                <br />
-                <br />
-                <div id="about" style="display:none;" width="100%">
-                    <iframe src="http://www.torn.com/profiles.php?XID=1867069" width="99%" height="680" style="margin-bottom:15px;box-shadow: 0px 0px 35px 1px rgb(0, 0, 0);"></iframe>__________________________________
-                    <br />
-                </div>
-                <div id="trade" style="display:none;" width="100%">
-                    <iframe src="http://www.torn.com/trade.php#step=start&userID=1867069" width="99%" height="680" style="margin-bottom:15px;box-shadow: 0px 0px 35px 1px rgb(0, 0, 0);"></iframe>__________________________________
-                    <br />
-                </div>
-                <div id="contact" style="display:none;" width="100%">
-                    <iframe src="http://www.torn.com/messages.php#/p=compose&XID=1867069" width="99%" height="680" style="margin-bottom:15px;box-shadow: 0px 0px 35px 1px rgb(0, 0, 0);"></iframe>__________________________________
-                    <br />
-                </div>
+                        <li>Box Of Medical Supplies</li>
+                        <li>Cans</li>
+                        <li>Casino Passes</li>
+                        <li>Cesium</li>
+                        <li>Donator Packs</li>
+                        <li>Drug Packs</li>
+                        <li>FHCs</li>
+                        <li>Flower Sets</li>
+                        <li>Plushies</li>
+                        <li>Properties</li>
+                        <li>Skateboards</li>
+                        <li>Xanax</li>
+                    </marquee>
+                </ul>
             </div>
-        </center>
-    </div>
-</div>
-<p style="text-align: right;"><span style="font-size:8px;"><em>Created by <a href="http://www.torn.com/forums.php?p=threads&amp;f=23&amp;t=15952653&amp;b=0&amp;a=0">Jheb Krueger</a></em></span>
+        </div>
+</center>
+<p style="text-align: right;"><span style="font-size:8px;color:transparent;"><em>Created by <a href="http://www.torn.com/forums.php?p=threads&amp;f=23&amp;t=15952653&amp;b=0&amp;a=0" style='color:transparent'>Jheb Krueger</a></em></span>
+
 </p>
