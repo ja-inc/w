@@ -1,4 +1,154 @@
-<style type='text/css'></style>
+<style type='text/css'>
+html, head, body {
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family:'Title';
+    src:url(//googledrive.com/host/0B-ic2lmNHP_URU44eEh0RGZ6VGM);
+}
+@font-face {
+    font-family:'kick';
+    src:url(//googledrive.com/host/0B-ic2lmNHP_UaUl2cHpfbXhFN1E);
+}
+@font-face {
+    font-family:'race';
+    src:url(//googledrive.com/host/0B-ic2lmNHP_UalBDRUxHdWhIM00);
+}
+@font-face {
+    font-family:'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+}
+.canvas {
+    max-width:600px;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+}
+.signature {
+background: rgba(255, 255, 255, 0.35) none repeat scroll 0% 0%;
+font-family: "PT Sans",Century Gothic,Verdana;
+margin: 10px auto;
+padding: 0px 25px;
+max-width: calc(100% - 60px);
+box-shadow: 2px 2px 5px rgba(55, 0, 0, 0.35);
+position: relative;
+margin-bottom: 0;
+padding-bottom: 20px;
+}
+.signature{
+    opacity:0.85;
+    transition:all 0.1s;
+    background:rgba(0,0,0,0.005);
+    color:#000;
+}
+.signature:hover{
+    opacity:1;
+    background:rgba(255,255,255,0.05);
+}
+.signature > div{
+    color:#200;
+    position:relative;
+    opacity:0.75;
+    transition:all 0.2s;
+    text-shadow:0 0 15px rgba(0,0,0,0);
+}
+.signature > div:hover{
+    opacity:1;
+    text-shadow:0 0 5px rgba(0,0,0,0.65);
+}
+.head.title {
+    background:url('http://i113.photobucket.com/albums/n238/marien4907/royal_mail.gif') no-repeat 0% 100%;
+    position:relative;
+    border-bottom:1px solid rgba(55, 0, 0, 0.35);
+}
+.head.title h4 {
+    display:inline-block;
+    font-family:"Title", Impact;
+    font-size: 40px;
+    position: relative;
+    margin: 0px;
+    padding:0px;
+    padding-top: 30px;
+    font-weight: normal;
+}
+.head.title h4 p{
+margin: 0px 0px 10px;
+font-size: 16px;
+font-family: Century Gothic,Verdana;
+padding-bottom: 10px;
+display: block;
+}
+.head {
+    margin:10px;
+}
+.intro {
+}
+.signature > .comp{
+    border-top:1px solid rgba(55, 0, 0, 0.15);
+    border-bottom:1px solid rgba(55, 0, 0, 0.35);
+    padding:20px 5px;
+}
+.comp.title,h4{
+    text-shadow:0 0 5px rgba(100,0,0,0.65);
+}
+.kick .title{
+    font-family:'kick';
+    font-size:35px;
+}
+.race .title{
+    font-family:'race';
+    font-size:35px;
+}
+.comp.title{
+    transition:all 0.2s;
+}
+.comp.title:hover{
+    transition:all 0.2s;
+}
+.comp .title p{
+    font-family:Verdana !important;
+    text-shadow:none;
+}
+.comp.title p{
+    font-weight:normal;
+    font-size:12px;
+}
+.kick{
+    background:rgba(255,255,255,0.65) url('http://s19.postimg.org/5hkjl5337/rysold.png') no-repeat 0% 100%;
+    height:500px;
+}
+.race {
+    background:rgba(255,255,255,0.65) url('http://s19.postimg.org/mr10jqswz/ryrace.png') no-repeat 0% 100%;
+    height:400px;
+}
+ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+li {
+    color:#fff;
+    text-align:left;
+    padding:0;
+    margin:0;
+    display:block;
+    min-width:100px;
+    max-width:220px;
+    background:rgba(0,0,0,0.25);
+    margin:5px 10px;
+    padding:0 20px;
+    transition:all 0.1s;
+    border:1px solid rgba(255,255,255,0.15);
+}
+li:hover{
+    background:rgba(255,255,255,0.45);
+    border:1px solid rgba(55,0,0,0.55);
+    color:#000;
+}
+</style>
 <center class='canvas'>
     <div class='signature'>
         <div class='head title'>
