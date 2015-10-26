@@ -1,160 +1,174 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type='text/javascript'>
+    $('a[href^=#]').on("click", function(e) {
+        var t = $(this.hash);
+        var t = t.length && t || $('[name=' + this.hash.slice(1) + ']');
+        if (t.length) {
+            var tOffset = t.offset().top;
+            $('html,body').animate({
+                scrollTop: tOffset - 20
+            }, 1000);
+            e.preventDefault();
+        }
+    });
+</script>
 <style type='text/css'>
-html, head, body {
-    background:#000;
-    margin:0;
-    padding:0;
-    position:relative;
-}
-@font-face{
-    font-family:qtitle;
-    src:url(//googledrive.com/host/0B-ic2lmNHP_URU44eEh0RGZ6VGM);
-}
-#canvas {
-    padding:0;
-    margin:0 auto;
-    max-width:745px;
-    position:relative;
-}
-.signature {
-    background:rgba(0,0,0,1) url('http://s19.postimg.org/m4wfcwxy9/bckgrnd_src_ggl.png') no-repeat fixed center 50px / 745px auto;
-    margin:10px auto;
-    position:relative;
-    border:1px solid rgba(0, 0, 0, 0.15);
-}
-.section.images img {
-    max-width:70%;
-    padding:2px;
-    border:1px solid rgba(0, 0, 0, 0.15);
-    margin:0px;
-    transition:all 0.2s;
-    box-shadow:0 0 2px #fff;
-    background:rgba(255,255,255,0.25);
-    z-index:0;
-}
-.section.images img:hover {
-    transform:scale(1.015,1.015);
-    z-index:99;
-    padding:2px;
-    border:1px solid rgba(0, 0, 0, 0.65);
-    background:rgba(255,255,255,0);
-    margin:0px;
-    box-shadow:0 0 5px #000;
-}
-ul {
-    list-style-type:none;
-    padding:0;
-    margin:0;
-}
-.event.list li {
-    position:relative;
-    font-size:12px;
-    font-family:Verdana;
-    max-width:80%;
-    padding:0px 5px;
-    border:1px solid rgba(0, 0, 0, 0.15);
-    background:rgba(255,255,255,0.75);
-    margin:1px;
-    text-align:left;
-    color:#009;
-    transition:all 0.2s;
-}
-.event.list li:nth-child(even) {
-    text-align:right !important;
-    background:rgba(255,255,255,0.85);
-    color:#077;
-    
-}
-.event.list li:hover{
-    background:rgba(255,255,255,0.25);
-    color:#fff;
-    text-shadow:0 0 5px #fff;
-    transform:scale(1.15,1.15);
-}
-a {
-    text-decoration:none;
-}
-a:hover {
-    text-decoration:underline;
-}
-.tabs.menu {
-    width:100%;
-    max-width:743px;
-    position:fixed;
-    top:-50px;
-    margin:10px auto;
-    padding:5px 0px;
-    text-align:center;
-    background:rgba(255, 255, 255, 0.75);
-    padding-top:50px;
-    border-bottom:1px solid rgba(0, 0, 0, 0.05);
-    z-index:999;
-}
-.tabs.menu li {
-    font-size:12px;
-    font-family:impact;
-    min-width:40px;
-    display:inline-block;
-    padding:5px 10px;
-    text-align:center !important;
-    border:1px solid rgba(0, 0, 0, 0.15);
-    margin:0px;
-    background:rgba(255, 255, 255, 0.35);
-    transition:all 0.2s;
-    color:#000;
-}
-.tabs.menu li:hover {
-    color:#fff;
-    background:rgba(0, 0, 0, 0.35);
-    transform:scale(1.15,1.15);
-    transition:all 0.1s;
-}
-.tabs.menu li:active{
-    transform:scale(0.95,0.95);
-}
-.tabhead{
-    padding-top:55px !important;
-    max-width:100% !important;
-    border:none !important;
-    box-shadow:none !important;
-    transform:none !important;
-    background: transparent !important;
-}
-.tabhead:hover{
-    border:none !important;
-    box-shadow:none !important;
-    transform:none !important;
-    background: transparent !important;
-}
-.tabhead h4{
-    padding:15px 0px;
-    max-width:calc(80% + 10px);
-    font-family:qtitle,impact;
-    font-weight:normal;
-    background:rgba(0,0,0,0.45);
-    box-shadow:0 0 5px rgba(255,255,255,0.25);
-    color:#fff;
-    transition:all 0.2s;
-}
-.tabhead h4:hover{
-    background:rgba(255,255,255,0.85);
-    color:#000;
-}
+    html, head, body {
+        background:#000;
+        margin:0;
+        padding:0;
+        position:relative;
+    }
+    @font-face {
+        font-family:qtitle;
+        src:url(//googledrive.com/host/0B-ic2lmNHP_URU44eEh0RGZ6VGM);
+    }
+    #canvas {
+        padding:0;
+        margin:0 auto;
+        max-width:745px;
+        position:relative;
+    }
+    .signature {
+        background:rgba(0, 0, 0, 1) url('http://s19.postimg.org/m4wfcwxy9/bckgrnd_src_ggl.png') no-repeat fixed center 50px / 745px auto;
+        margin:10px auto;
+        position:relative;
+        border:1px solid rgba(0, 0, 0, 0.15);
+    }
+    .section.images img {
+        max-width:70%;
+        padding:2px;
+        border:1px solid rgba(0, 0, 0, 0.15);
+        margin:0px;
+        transition:all 0.2s;
+        box-shadow:0 0 2px #fff;
+        background:rgba(255, 255, 255, 0.25);
+        z-index:0;
+    }
+    .section.images img:hover {
+        transform:scale(1.015, 1.015);
+        z-index:99;
+        padding:2px;
+        border:1px solid rgba(0, 0, 0, 0.65);
+        background:rgba(255, 255, 255, 0);
+        margin:0px;
+        box-shadow:0 0 5px #000;
+    }
+    ul {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+    }
+    .event.list li {
+        position:relative;
+        font-size:12px;
+        font-family:Verdana;
+        max-width:80%;
+        padding:0px 5px;
+        border:1px solid rgba(0, 0, 0, 0.15);
+        background:rgba(255, 255, 255, 0.75);
+        margin:1px;
+        text-align:left;
+        color:#009;
+        transition:all 0.2s;
+    }
+    .event.list li:nth-child(even) {
+        text-align:right !important;
+        background:rgba(255, 255, 255, 0.85);
+        color:#077;
+    }
+    .event.list li:hover {
+        background:rgba(255, 255, 255, 0.25);
+        color:#fff;
+        text-shadow:0 0 5px #fff;
+        transform:scale(1.15, 1.15);
+    }
+    a {
+        text-decoration:none;
+    }
+    a:hover {
+        text-decoration:underline;
+    }
+    .tabs.menu {
+        width:100%;
+        max-width:743px;
+        position:fixed;
+        top:-50px;
+        margin:10px auto;
+        padding:5px 0px;
+        text-align:center;
+        background:rgba(255, 255, 255, 0.75);
+        padding-top:50px;
+        border-bottom:1px solid rgba(0, 0, 0, 0.05);
+        z-index:999;
+    }
+    .tabs.menu li {
+        font-size:12px;
+        font-family:impact;
+        min-width:40px;
+        display:inline-block;
+        padding:5px 10px;
+        text-align:center !important;
+        border:1px solid rgba(0, 0, 0, 0.15);
+        margin:0px;
+        background:rgba(255, 255, 255, 0.35);
+        transition:all 0.2s;
+        color:#000;
+    }
+    .tabs.menu li:hover {
+        color:#fff;
+        background:rgba(0, 0, 0, 0.35);
+        transform:scale(1.15, 1.15);
+        transition:all 0.1s;
+    }
+    .tabs.menu li:active {
+        transform:scale(0.95, 0.95);
+    }
+    .tabhead {
+        padding-top:55px !important;
+        max-width:100% !important;
+        border:none !important;
+        box-shadow:none !important;
+        transform:none !important;
+        background: transparent !important;
+    }
+    .tabhead:hover {
+        border:none !important;
+        box-shadow:none !important;
+        transform:none !important;
+        background: transparent !important;
+    }
+    .tabhead h4 {
+        padding:15px 0px;
+        max-width:calc(80% + 10px);
+        font-family:qtitle, impact;
+        font-weight:normal;
+        background:rgba(0, 0, 0, 0.45);
+        box-shadow:0 0 5px rgba(255, 255, 255, 0.25);
+        color:#fff;
+        transition:all 0.2s;
+    }
+    .tabhead h4:hover {
+        background:rgba(255, 255, 255, 0.85);
+        color:#000;
+    }
 </style>
 <center id='canvas'>
     <div class='signature'>
         <div class='section Menu'>
-            <ul class='tabs menu'>
-                <a href='#'><li>Home</li></a>
-                <a href='#gdi'><li>GDI</li></a>
-                <a href='#radio'><li>Radio</li></a>
-                <a href='#arts'><li>Arts</li></a>
-                <a href='#friends'><li>Friends</li></a>
-                <a href='#channel'><li>Channel</li></a>
-                <a href='#faction'><li>Faction</li></a>
-                <a href='#husband'><li>Husband</li></a>
-                <a href='#events'><li>Events</li></a>
+            <ul class='tabs menu'> <a href='#home'><li>Home</li></a>
+ <a href='#gdi'><li>GDI</li></a>
+ <a href='#radio'><li>Radio</li></a>
+ <a href='#arts'><li>Arts</li></a>
+ <a href='#friends'><li>Friends</li></a>
+ <a href='#channel'><li>Channel</li></a>
+ <a href='#faction'><li>Faction</li></a>
+ <a href='#husband'><li>Husband</li></a>
+ <a href='#events'><li>Events</li></a>
+
             </ul>
-        </div><div style='margin-top:200px'></div>
+        </div>
+        <div style='margin-top:440px'></div>
         <div class='section images'>
             <img class='tabhead' id='home' src='http://i50.tinypic.com/vy7b5c.png' />
             <br />
@@ -241,63 +255,117 @@ a:hover {
             <img src='http://i40.tinypic.com/b5ru5d.png' />
             <br />
             <img src='http://i49.tinypic.com/1in0ja.png' />
-            <br /><img src='http://i59.tinypic.com/w6oy06.png' />
-            <br /><img src='http://i1341.photobucket.com/albums/o754/MerlieJay/tyler-demi_zps7cd35eae.png' />
-            <br /><img src='http://i1139.photobucket.com/albums/n559/tirth1/Divalicious.png' />
-            <br /><img src='http://i49.tinypic.com/2a5b0nd.png' />
-            <br /><img src='http://i1173.photobucket.com/albums/r590/Ausseh/Diva2.png' />
-            <br /><img src='http://i1136.photobucket.com/albums/n493/Aussie-/Divalicious2-1.png' />
-            <br /><img src='http://i49.tinypic.com/wkg39s.png' />
-            <br /><img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Womansig.jpg' />
-            <br /><img src='http://i50.tinypic.com/2hcjjg8.png' />
-            <br /><img src='http://oi45.tinypic.com/2lwugqe.jpg' />
-            <br /><img src='http://i46.tinypic.com/sm50tt.png' />
-            <br /><img src='http://i48.tinypic.com/9gkcx5.png' />
-            <br /><img src='http://i42.tinypic.com/34fl4c4.jpg' />
-            <br /><img src='http://i47.tinypic.com/1z4eujm.png' />
-            <br /><img src='http://i49.tinypic.com/a2gb4p.png' />
             <br />
-            <img class='tabhead' id='friends' src='http://i45.tinypic.com/eb1no5.png' /><br />
-            <img src='http://i1089.photobucket.com/albums/i343/Flossyanne/divalicious.textjpg.jpg' /><br />
-            <img src='http://i1341.photobucket.com/albums/o754/MerlieJay/Divalicious_Friend_zps7be6831f.png' /><br />
-            <img src='http://i34.tinypic.com/20ji8wg.png' /><br />
-            <img src='http://i.imgur.com/HtGLIT4.png' /><br />
-            <img src='http://i43.tinypic.com/15f3ig7.jpg' /><br />
-            <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Sigs/Pokemon/Espeon%20and%20Umbreon.jpg' /><br />
-            <img src='http://i45.tinypic.com/5ot9p4.png' /><br />
-            <img src='http://i1331.photobucket.com/albums/w595/lady_chuky/friend_zps2ecbdff2.png' /><br />
-            <img src='http://i48.tinypic.com/dxlpiu.png' /><br />
-            <img src='http://img6.imageshack.us/img6/740/spartacusv.jpg' /><br />
-            <img src='http://i.imgur.com/SDLayAD.jpg' /><br />
-            <img src='http://oi43.tinypic.com/2z7fj7n.jpg' /><br />
-            <img src='http://i50.tinypic.com/1z36pmx.jpg' /><br />
-            <img src='http://i1331.photobucket.com/albums/w595/lady_chuky/untitledx_zps8867589e.png' /><br />
-            <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Sigs/FriendofVail.jpg' /><br />
-            <img src='http://i184.photobucket.com/albums/x31/HavokGDI/sigv3.png' /><br />
-            <img src='http://img831.imageshack.us/img831/2605/huggedbyjewelz.png' /><br />
+            <img src='http://i59.tinypic.com/w6oy06.png' />
+            <br />
+            <img src='http://i1341.photobucket.com/albums/o754/MerlieJay/tyler-demi_zps7cd35eae.png' />
+            <br />
+            <img src='http://i1139.photobucket.com/albums/n559/tirth1/Divalicious.png' />
+            <br />
+            <img src='http://i49.tinypic.com/2a5b0nd.png' />
+            <br />
+            <img src='http://i1173.photobucket.com/albums/r590/Ausseh/Diva2.png' />
+            <br />
+            <img src='http://i1136.photobucket.com/albums/n493/Aussie-/Divalicious2-1.png' />
+            <br />
+            <img src='http://i49.tinypic.com/wkg39s.png' />
+            <br />
+            <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Womansig.jpg' />
+            <br />
+            <img src='http://i50.tinypic.com/2hcjjg8.png' />
+            <br />
+            <img src='http://oi45.tinypic.com/2lwugqe.jpg' />
+            <br />
+            <img src='http://i46.tinypic.com/sm50tt.png' />
+            <br />
+            <img src='http://i48.tinypic.com/9gkcx5.png' />
+            <br />
+            <img src='http://i42.tinypic.com/34fl4c4.jpg' />
+            <br />
+            <img src='http://i47.tinypic.com/1z4eujm.png' />
+            <br />
+            <img src='http://i49.tinypic.com/a2gb4p.png' />
+            <br />
+            <img class='tabhead' id='friends' src='http://i45.tinypic.com/eb1no5.png' />
+            <br />
+            <img src='http://i1089.photobucket.com/albums/i343/Flossyanne/divalicious.textjpg.jpg' />
+            <br />
+            <img src='http://i1341.photobucket.com/albums/o754/MerlieJay/Divalicious_Friend_zps7be6831f.png' />
+            <br />
+            <img src='http://i34.tinypic.com/20ji8wg.png' />
+            <br />
+            <img src='http://i.imgur.com/HtGLIT4.png' />
+            <br />
+            <img src='http://i43.tinypic.com/15f3ig7.jpg' />
+            <br />
+            <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Sigs/Pokemon/Espeon%20and%20Umbreon.jpg' />
+            <br />
+            <img src='http://i45.tinypic.com/5ot9p4.png' />
+            <br />
+            <img src='http://i1331.photobucket.com/albums/w595/lady_chuky/friend_zps2ecbdff2.png' />
+            <br />
+            <img src='http://i48.tinypic.com/dxlpiu.png' />
+            <br />
+            <img src='http://img6.imageshack.us/img6/740/spartacusv.jpg' />
+            <br />
+            <img src='http://i.imgur.com/SDLayAD.jpg' />
+            <br />
+            <img src='http://oi43.tinypic.com/2z7fj7n.jpg' />
+            <br />
+            <img src='http://i50.tinypic.com/1z36pmx.jpg' />
+            <br />
+            <img src='http://i1331.photobucket.com/albums/w595/lady_chuky/untitledx_zps8867589e.png' />
+            <br />
+            <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Sigs/FriendofVail.jpg' />
+            <br />
+            <img src='http://i184.photobucket.com/albums/x31/HavokGDI/sigv3.png' />
+            <br />
+            <img src='http://img831.imageshack.us/img831/2605/huggedbyjewelz.png' />
+            <br />
             <img class='tabhead' id='channel' src='http://i48.tinypic.com/2jwpx2.png' />
             <br />
-            <img src='http://i48.tinypic.com/n51yt1.png' /><br />
-            <img src='http://i474.photobucket.com/albums/rr103/luckyboy94/Signatures/Party1_zps79ef03cd.png' /><br />
-            <img src='http://i40.tinypic.com/2lw5fh3.jpg' /><br />
-            <img src='http://i41.tinypic.com/fkp7o9.jpg' /><br />
-            <img src='http://oi47.tinypic.com/2gx47ir.jpg' /><br />
-            <img src='http://i49.tinypic.com/2vb4jlu.png' /><br />
-            <img src='http://i48.tinypic.com/2l9jytu.png' /><br />
-            <img src='http://i121.photobucket.com/albums/o221/mysticpainthorse/Hot_Tub.png' /><br />
-            <img src='http://i48.tinypic.com/2qtllq9.png' /><br />
-            <img class='tabhead' id='faction' src='http://i49.tinypic.com/al10k6.png' /><br />
-            <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Assasin%20Diva.jpg' /><br />
-            <img src='http://s14.postimg.org/ls4zj5df5/Untitled_1.png' /><br />
-            <img src='http://i41.tinypic.com/2mdquex.jpg' /><br />
-            <img class='tabhead' id='husband' src='http://i50.tinypic.com/2s7t7yv.png' /><br />
-            <img src='http://i.minus.com/irTJ0D9z5U68.png' /><br />
-            <img src='http://i.imgur.com/MRGidWK.png' /><br />
-            <img src='http://i62.tinypic.com/351j0wy.png' /><br />
-            <img src='http://i833.photobucket.com/albums/zz259/TornCityGFX/myanmar2013_zpsa071d777.png' /><br />
-            <img src='http://i40.tinypic.com/ra6f5k.jpg' /><br />
-            </div>
-        <div class='tabhead' id='events' ><h4>EVENTS</h4>
+            <img src='http://i48.tinypic.com/n51yt1.png' />
+            <br />
+            <img src='http://i474.photobucket.com/albums/rr103/luckyboy94/Signatures/Party1_zps79ef03cd.png' />
+            <br />
+            <img src='http://i40.tinypic.com/2lw5fh3.jpg' />
+            <br />
+            <img src='http://i41.tinypic.com/fkp7o9.jpg' />
+            <br />
+            <img src='http://oi47.tinypic.com/2gx47ir.jpg' />
+            <br />
+            <img src='http://i49.tinypic.com/2vb4jlu.png' />
+            <br />
+            <img src='http://i48.tinypic.com/2l9jytu.png' />
+            <br />
+            <img src='http://i121.photobucket.com/albums/o221/mysticpainthorse/Hot_Tub.png' />
+            <br />
+            <img src='http://i48.tinypic.com/2qtllq9.png' />
+            <br />
+            <img class='tabhead' id='faction' src='http://i49.tinypic.com/al10k6.png' />
+            <br />
+            <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Assasin%20Diva.jpg' />
+            <br />
+            <img src='http://s14.postimg.org/ls4zj5df5/Untitled_1.png' />
+            <br />
+            <img src='http://i41.tinypic.com/2mdquex.jpg' />
+            <br />
+            <img class='tabhead' id='husband' src='http://i50.tinypic.com/2s7t7yv.png' />
+            <br />
+            <img src='http://i.minus.com/irTJ0D9z5U68.png' />
+            <br />
+            <img src='http://i.imgur.com/MRGidWK.png' />
+            <br />
+            <img src='http://i62.tinypic.com/351j0wy.png' />
+            <br />
+            <img src='http://i833.photobucket.com/albums/zz259/TornCityGFX/myanmar2013_zpsa071d777.png' />
+            <br />
+            <img src='http://i40.tinypic.com/ra6f5k.jpg' />
+            <br />
+        </div>
+        <div class='tabhead' id='events'>
+             <h4>EVENTS</h4>
+
             <ul class='event list'>
                 <li>You were sent the item Parachute from Dexter with the message: Ill always catch you when you fall, hope this helps whenever I'm not around x Love you soo much.</li>
                 <li>You were sent the item Feathery hotel coupon from xlordx with the message - becuz i missed you turning 365 spend the night being pampered</li>
@@ -310,7 +378,10 @@ a:hover {
                 <li>You were sent $6,969,696 from Speedeh with the message: 69!</li>
                 <li>You were sent $69,696,969 from <a href='http://www.torn.com/profiles.php?XID=1691769' target='_blank'>Speedeh</a> with the message: Love you! Buy Some Sheep!</li>
                 <li>You were sent $69,696,969 from Speedeh with the message: Love you more and more every day</li>
-                <li><a href='http://www.torn.com/profiles.php?XID=1691769' target='_blank'>Speedeh</a> has reached level 40. Because you referred him to Torn, you have received 250 points, 31 days donator status, a Drug pack and a Pair of glasses.</li><br /><img src='http://i49.tinypic.com/aemqky.png' /><br />
+                <li><a href='http://www.torn.com/profiles.php?XID=1691769' target='_blank'>Speedeh</a> has reached level 40. Because you referred him to Torn, you have received 250 points, 31 days donator status, a Drug pack and a Pair of glasses.</li>
+                <br />
+                <img src='http://i49.tinypic.com/aemqky.png' />
+                <br />
             </ul>
         </div>
     </div>
