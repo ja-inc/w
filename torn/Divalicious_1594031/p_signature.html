@@ -73,24 +73,24 @@ ul {
     margin:0
 }
 .event.list li {
-    position:relative;
-    font-size:12px;
-    font-family:Verdana;
-    max-width:80%;
-    padding:5px 5px;
-    border:1px solid rgba(0, 0, 0, 0.15);
-    background:rgba(255, 255, 255, 0.45);
-    margin:2px;
-    text-align:left;
-    color:#009;
-    transition:all .2s;
-    z-index:0;
-    font-weight:bold;
+position: relative;
+font-size: 12px;
+font-family: Verdana;
+max-width: 80%;
+padding: 5px;
+border: 1px solid rgba(0, 0, 0, 0.08);
+background: rgba(255, 255, 255, 0) none repeat scroll 0% 0%;
+margin: 2px;
+text-align: left;
+color: rgb(194, 255, 255);
+transition: all 0.2s ease 0s;
+z-index: 0;
+font-weight: bold;
 }
 .event.list li:nth-child(even) {
-    text-align:right!important;
-    background:rgba(255, 255, 255, 0.55);
-    color:#077
+text-align: right !important;
+background: rgba(255, 255, 255, 0.03) none repeat scroll 0% 0%;
+color: rgb(113, 255, 255);
 }
 .event.list li:hover {
     background:rgba(0, 0, 0, 0.05);
@@ -100,7 +100,8 @@ ul {
     z-index:999;
 }
 a {
-    text-decoration:none
+    text-decoration:none;
+    text-shadow:0 0 5px #fff
 }
 a:hover {
     text-decoration:underline
@@ -208,7 +209,6 @@ a:hover {
                     <div class='tabhead' id='home'>
                         <img class='imghead' src='http://i50.tinypic.com/vy7b5c.png' />
                     </div>
-                    <br />
                     <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Sigs/Divalicious.jpg' />
                     <br />
                     <img src='http://i.imgur.com/QH2KYm0.png' />
@@ -238,7 +238,6 @@ a:hover {
                     <div class='tabhead' id='gdi'>
                         <img class='imghead' src='http://i47.tinypic.com/4q3iav.png' />
                     </div>
-                    <br />
                     <img src='http://i184.photobucket.com/albums/x31/HavokGDI/diva-andy.png' />
                     <br />
                     <img src='http://i184.photobucket.com/albums/x31/HavokGDI/diva-ronny.png' />
@@ -254,7 +253,6 @@ a:hover {
                     <div class='tabhead' id='radio'>
                         <img class='imghead' src='http://i46.tinypic.com/sbra05.png' />
                     </div>
-                    <br />
                     <img src='http://i.imgur.com/CmFpLGn.png' />
                     <br />
                     <img src='http://i1341.photobucket.com/albums/o754/MerlieJay/carol_zps0d9b691d.png' />
@@ -268,7 +266,6 @@ a:hover {
                     <div class='tabhead' id='arts'>
                         <img class='imghead' src='http://i48.tinypic.com/qqrbwz.png' />
                     </div>
-                    <br />
                     <img src='http://i40.tinypic.com/1128oyw.jpg' />
                     <br />
                     <img src='http://i1296.photobucket.com/albums/ag6/Jax_Cullen/divalicious_pieces_by_ms_zpsaf88de05.png' />
@@ -332,7 +329,6 @@ a:hover {
                     <div class='tabhead' id='friends'>
                         <img class='imghead' src='http://i45.tinypic.com/eb1no5.png' />
                     </div>
-                    <br />
                     <img src='http://i1089.photobucket.com/albums/i343/Flossyanne/divalicious.textjpg.jpg' />
                     <br />
                     <img src='http://i1341.photobucket.com/albums/o754/MerlieJay/Divalicious_Friend_zps7be6831f.png' />
@@ -367,8 +363,8 @@ a:hover {
                     <br />
                     <img src='http://img831.imageshack.us/img831/2605/huggedbyjewelz.png' />
                     <br />
-                    <img class='tabhead' id='channel' src='http://i48.tinypic.com/2jwpx2.png' />
-                    <br />
+                    <div class='tabhead' id='channel'>
+                    <img class='imghead' src='http://i48.tinypic.com/2jwpx2.png' /></div>
                     <img src='http://i48.tinypic.com/n51yt1.png' />
                     <br />
                     <img src='http://i474.photobucket.com/albums/rr103/luckyboy94/Signatures/Party1_zps79ef03cd.png' />
@@ -387,16 +383,16 @@ a:hover {
                     <br />
                     <img src='http://i48.tinypic.com/2qtllq9.png' />
                     <br />
-                    <img class='tabhead' id='faction' src='http://i49.tinypic.com/al10k6.png' />
-                    <br />
+                    <div class='tabhead' id='faction'>
+                    <img class='imghead' src='http://i49.tinypic.com/al10k6.png' /></div>
                     <img src='http://i1123.photobucket.com/albums/l558/FIN_Antton/Assasin%20Diva.jpg' />
                     <br />
                     <img src='http://s14.postimg.org/ls4zj5df5/Untitled_1.png' />
                     <br />
                     <img src='http://i41.tinypic.com/2mdquex.jpg' />
                     <br />
-                    <img class='tabhead' id='husband' src='http://i50.tinypic.com/2s7t7yv.png' />
-                    <br />
+                    <div class='tabhead' id='husband'>
+                    <img class='imghead' src='http://i50.tinypic.com/2s7t7yv.png' /></div>
                     <img src='http://i.minus.com/irTJ0D9z5U68.png' />
                     <br />
                     <img src='http://i.imgur.com/MRGidWK.png' />
@@ -426,7 +422,9 @@ a:hover {
                         <li>You were sent $69,696,969 from Speedeh with the message: Love you more and more every day</li>
                         <li><a href='http://www.torn.com/profiles.php?XID=1691769' target='_blank'>Speedeh</a> has reached level 40. Because you referred him to Torn, you have received 250 points, 31 days donator status, a Drug pack and a Pair of glasses.</li>
                         <br />
-                        <img class="tabhead" style='margin-top:20px !important;margin-bottom:10px !important;' src='http://i49.tinypic.com/aemqky.png' />
+                        <div class='section images'>
+                        <div class='tabhead' id='bye'>
+                        <img class="imghead" style='margin-top:20px !important;margin-bottom:10px !important;' src='http://i49.tinypic.com/aemqky.png' /></div></div>
                         <br />
                     </ul>
                 </div>
