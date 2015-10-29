@@ -1,5 +1,4 @@
-<style type='text/css'>
-html, head, body {
+<style type='text/css'>html, head, body {
     margin:0;
     padding:0;
 }
@@ -51,7 +50,7 @@ padding-bottom: 20px;
 .signature > div{
     color:#200;
     position:relative;
-    opacity:0.75;
+    opacity:0.95;
     transition:all 0.2s;
     text-shadow:0 0 15px rgba(0,0,0,0);
 }
@@ -149,6 +148,37 @@ li:hover{
     border:1px solid rgba(55,0,0,0.55);
     color:#000;
 }
+.badass1,.badass2,.badass3{
+    text-shadow:0 0 5px rgba(5,0,0,0.75);
+}
+.badass1::before{
+    content:'1ST. Arthur_Shark [478886]';
+    transition:all 0.5s;
+}
+.badass1:hover:before{
+    content:'1ST PLACE $30,000,000';
+}
+.badass2::before{
+    content:'2ND. Jheb [1955822]';
+    transition:all 0.5s;
+}
+.badass2:hover:before{
+    content:'2ND PLACE 1 DONATOR PACK';
+}
+.badass3::before{
+    content:'3RD. Flandre [1284087]';
+    transition:all 0.5s;
+}
+.badass3:hover:before{
+    content:'3RD PLACE 1 FHC COUPON';
+}
+.complete{
+    position:absolute;
+    bottom:15px;
+    right:10px;
+    max-width:120px;
+    filter:drop-shadow(0 0 2px #fff);
+}
 </style>
 <center class='canvas'>
     <div class='signature'>
@@ -166,14 +196,14 @@ li:hover{
             </div>
             <div class='comp body'>
                 <p><b>PRIZES</b><ul>
-                        <li>1ST PLACE $30,000,000</li>
-                        <li>2ND PLACE 1 DONATOR PACK</li>
-                        <li>3RD PLACE 1 FHC COUPON</li>
+                        <li class='badass1'></li>
+                        <li class='badass2'></li>
+                        <li class='badass3'></li>
                     </ul>
                     <br />SO, DO YOUR BEST AND KICK SOME ASS !
                     <br />CHAIN TIMES 19:00
                     <br />ALSO NEW CHAIN TIME 00:00</p>
-            </div>
+            </div><img src='http://s29.postimg.org/sma3j0sev/complete.png' class='complete' />
         </div>
         <div class='comp race'>
             <div class='comp title'>START YOUR ENGINES
